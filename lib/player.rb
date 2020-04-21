@@ -1,3 +1,4 @@
+require 'pry'
 class Player
   attr_accessor :name, :life_points
 
@@ -74,7 +75,6 @@ class HumanPlayer < Player
         puts "Waouw ! Tu as trouvé un pack de +80 points de vie !"
     end
   end
-
 
 
 end
