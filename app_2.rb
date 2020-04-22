@@ -25,12 +25,14 @@ while (player1.life_points > 0 || player2.life_points > 0) && user.life_points >
   puts ""
   puts "Attaquer un ennemi en vue :"
     if player1.life_points > 0
-      puts "   0 - #{player1.show_state}"
+      print "   0 - "
+      player1.show_state
     else
       puts "   #{player1.name} est mort"
     end
     if player2.life_points > 0
-      puts "   1 - #{player2.show_state}"
+      print "   1 - "
+      player2.show_state
     else
       puts "   #{player2.name} est mort"
     end
